@@ -1,0 +1,71 @@
+{
+    "appId": "com.pocs.aplicacao1",
+    "productName": "POC - Aplicacao1",
+    "copyright": "POC",
+    "extraResources": [],
+    "directories": {
+        "app": ".",
+        "output": "release",
+        "buildResources": "build-res"
+    },
+    "files": [
+        "build-res/**/*",
+        "package.json",
+        "**/*",
+        "node_modules"
+    ],
+    "dmg": {
+        "background": null,
+        "backgroundColor": "#ffffff",
+        "window": {
+            "width": "400",
+            "height": "300"
+        },
+        "contents": [
+            {
+                "x": 100,
+                "y": 100
+            },
+            {
+                "x": 300,
+                "y": 100,
+                "type": "link",
+                "path": "/Applications"
+            }
+        ]
+    },
+    "mac": {
+        "target": "dmg",
+        "category": "public.pocs.aplicacao1"
+      },
+    "win": {
+        "target":[
+            "nsis",
+            "portable",
+            "appx"
+        ],
+        "asar": true,
+        "icon": "build-res/favicon_256x256.ico",
+        "legalTrademarks": "POC - Aplicacao1",
+        "publisherName": "POC"
+    },
+    "appx": {
+        "identityName": "com.pocs.aplicacao1",
+        "applicationId": "aplicacao1",
+        "backgroundColor": "#ffffff",
+        "displayName": "Aplicacao1",
+        "languages": [
+            "pt-BR"
+        ],
+        "publisherDisplayName": "POC",
+        "publisher": "CN=POC"
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": false
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    }
+}

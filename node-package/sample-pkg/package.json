@@ -1,0 +1,36 @@
+{
+    "name": "@pocs/sample-pkg",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/esm/index.js",
+    "types": "./dist/types/index.d.ts",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "directory": "../node-package/sample-pkg"
+    },
+    "exports": {
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js",
+        "default": "./dist/esm/index.js"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint ./src",
+        "build": "tsc --project tsconfig.esm.json & tsc --project tsconfig.cjs.json"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@babel/preset-env": "^7.16.11",
+        "babel-jest": "^27.4.5",
+        "eslint": "^8.4.1",
+        "jest": "^27.4.3",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "@types/node": "^18.11.0"
+    }
+}

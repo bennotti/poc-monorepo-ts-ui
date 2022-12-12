@@ -1,0 +1,12 @@
+@keyframes animatedBackground {
+  from { background-position: 0px 0; }
+  to { background-position: -562px 0; }
+}
+#header-top-scroll {
+  height: 60px;
+  width: 100%;
+  background-image: url('https://archive.org/download/clouds-tiled/clouds-tiled.png');
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite;
+  line-height: 400px;
+}

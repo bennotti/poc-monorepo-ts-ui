@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/use-sample-pkg2-hook/index.ts"],
+  "sourcesContent": ["import { useEffect, useRef } from 'react';\n\nexport const useSamplePkg2 = () => {\n  console.log('rodout');\n};\n\nexport default useSamplePkg2;"],
+  "mappings": "MAEO,IAAMA,EAAgB,UAAA,CAC3B,QAAQ,IAAI,QAAQ,CACtB,EAEAC,EAAeD",
+  "names": ["useSamplePkg2", "use_sample_pkg2_hook_default"]
+}
