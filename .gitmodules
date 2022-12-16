@@ -1,7 +1,7 @@
-#[submodule "node-package/poc-monorepo-subrepo1"]
-#	path = node-package/poc-monorepo-subrepo1
-#	url = git@github.com:bennotti/poc-monorepo-subrepo1.git
-#	branch = main
+[submodule "node-package/poc-ts-react-componente-package"]
+	path = node-package/poc-ts-react-componente-package
+	url = git@github.com:bennotti/poc-ts-react-componente-package.git
+	branch = main
 #[submodule "node-package/poc-monorepo-subrepo2"]
 #	path = node-package/poc-monorepo-subrepo2
 #	url = git@github.com:bennotti/poc-monorepo-subrepo2.git
