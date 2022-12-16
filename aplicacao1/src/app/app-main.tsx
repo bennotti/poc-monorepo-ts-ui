@@ -60,34 +60,6 @@ const App: React.FC = () => {
   
   const dispatch: AppDispatch = useDispatch();
 
-  // const checkSettings = () => {
-  //   const settings = window.internal.events.handle('check-settings');
-  //   // dispatch(tryRestoreSettings(settings));
-  //   setInicializacaoVerificada(true);
-  // };
-
-  // useSetInterval(async () => {
-  //   if (!inicializacaoVerificada) {
-  //     checkSettings();
-  //   }
-  // }, 120000);
-
-  useEffect(() => {
-    // checkSettings();
-
-    // if (window.internal.events) {
-    //   window.internal.events.receive('notificacao', (args: NotificacaoDto) => {
-    //     openNotificationWithIcon(args);
-    //   });
-    //   window.internal.events.receive('notificacao-sucesso', (args: NotificacaoDto) => {
-    //     openNotificationWithIcon(args, 'success');
-    //   });
-    //   window.internal.events.receive('notificacao-error', (args: NotificacaoDto) => {
-    //     openNotificationWithIcon(args, 'error');
-    //   });
-    // }
-  }, []);
-
   const renderBrowserContent = () => {
     if (currentLayout === 'application') {
       return (
