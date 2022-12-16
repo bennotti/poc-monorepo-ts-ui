@@ -1,0 +1,8 @@
+#[submodule "node-package/poc-monorepo-subrepo1"]
+#	path = node-package/poc-monorepo-subrepo1
+#	url = git@github.com:bennotti/poc-monorepo-subrepo1.git
+#	branch = main
+#[submodule "node-package/poc-monorepo-subrepo2"]
+#	path = node-package/poc-monorepo-subrepo2
+#	url = git@github.com:bennotti/poc-monorepo-subrepo2.git
+#	branch = main
